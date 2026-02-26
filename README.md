@@ -2,7 +2,7 @@
 
 This folder contains the Hardware Abstraction Layer (HAL) and custom primitives for managing wireless communication on the **STM32WL33C** platform. The system implements a dual-radio architecture: a high-speed main radio for data and an ultra-low-power receiver for remote wake-up.
 
-## 📌 System Architecture
+## System Architecture
 The driver is organized into three main components:
 1.  **Primitives (`primitives.h`)**: An abstraction layer that coordinates both radio modules for high-level operations.
 2.  **LPAWUR (`mw_lpawur.h`)**: Management of the *Low Power Autonomous Wake-up Receiver*.
@@ -10,7 +10,7 @@ The driver is organized into three main components:
 
 ---
 
-## 🛠 Main Primitives
+## Main Primitives
 The functions defined in `my_primitives.h` serve as main radio primitives:
 
 | Function | Description |
@@ -22,7 +22,7 @@ The functions defined in `my_primitives.h` serve as main radio primitives:
 
 ---
 
-## ⚙️ Default Configurations
+## Default Configurations
 
 ### Main Radio (MRSUBG)
 * **Data Mode:** 868 MHz, 2FSK.
