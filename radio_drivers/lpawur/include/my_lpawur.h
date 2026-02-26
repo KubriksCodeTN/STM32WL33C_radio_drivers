@@ -1,10 +1,3 @@
-/*
- * lpawur.h
- *
- *  Created on: Jun 10, 2025
- *      Author: sdagn
- */
-
 #ifndef APPLICATION_USER_CORE_INC_LPAWUR_H_
 #define APPLICATION_USER_CORE_INC_LPAWUR_H_
 

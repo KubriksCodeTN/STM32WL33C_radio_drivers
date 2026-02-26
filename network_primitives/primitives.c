@@ -28,9 +28,6 @@ static void wakeup_frame_create(uint8_t *lpawur_frame, frame_sync_t addr, const 
 	lpawur_frame[idx++] = crc & 0xFF;
 }
 
-
-
-
 void LPAWUR_init(frame_sync_t fs, SLPAWUR_RFConfig *radio_cfg,
 		SLPAWUR_FrameInit *frame_cfg) {
 	my_frame_sync = fs;
@@ -93,12 +90,10 @@ LPAWUR_Status recv_wakeup(uint8_t *payload, size_t sz) {
 	return lpawur_recv(payload, sz);
 }
 
-
 inline void send_ack(const uint8_t *ack, size_t sz) {
 	// NB application needs to add address of destination in payload (if needed)
 	mrsubg_send(ack, sz);
 }
-
 
 inline void send_data(const uint8_t *payload, size_t sz) {
 	// NB application needs to add address of destination in payload (if needed)

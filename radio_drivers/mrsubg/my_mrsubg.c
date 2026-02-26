@@ -1,10 +1,3 @@
-/*
- * my_mrsubg.c
- *
- *  Created on: Jun 10, 2025
- *      Author: sdagn
- */
-
 #include <assert.h>
 #include "my_mrsubg.h"
 
@@ -88,32 +81,7 @@ uint32_t mrsubg_recv(uint8_t *data, size_t sz, uint32_t recv_duration_ms) {
 		// __HAL_MRSUBG_STROBE_CMD(CMD_RX);
 
 	}
-
-	/*
-
-	else {
-
-		__HAL_MRSUBG_STROBE_CMD(CMD_SABORT);
-
-		// wait for SABORT...
-
-		while ((__HAL_MRSUBG_GET_RFSEQ_IRQ_STATUS() & MR_SUBG_GLOB_STATUS_RFSEQ_IRQ_STATUS_SABORT_DONE_F) == 0);
-
-		__HAL_MRSUBG_CLEAR_RFSEQ_IRQ_FLAG(MR_SUBG_GLOB_STATUS_RFSEQ_IRQ_STATUS_SABORT_DONE_F);
-
-	}
-
-/*
-
-	 else {
-		 __HAL_MRSUBG_STROBE_CMD(CMD_SABORT);
-		 // wait for SABORT...
-		 while ((__HAL_MRSUBG_GET_RFSEQ_IRQ_STATUS() & MR_SUBG_GLOB_STATUS_RFSEQ_IRQ_STATUS_SABORT_DONE_F) == 0);
-		 __HAL_MRSUBG_CLEAR_RFSEQ_IRQ_FLAG(MR_SUBG_GLOB_STATUS_RFSEQ_IRQ_STATUS_SABORT_DONE_F);
-	 }
-
-*/
-
+	
 	__HAL_MRSUBG_CLEAR_RFSEQ_IRQ_FLAG(
 	MR_SUBG_GLOB_STATUS_RFSEQ_IRQ_STATUS_RX_TIMEOUT_F);
 

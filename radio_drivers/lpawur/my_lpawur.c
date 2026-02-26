@@ -1,9 +1,3 @@
-/*
- * lpawur.c
- *
- *  Created on: Jun 10, 2025
- *      Author: sdagn
- */
 #include "stm32wl3x_hal.h"
 
 #include "my_lpawur.h"

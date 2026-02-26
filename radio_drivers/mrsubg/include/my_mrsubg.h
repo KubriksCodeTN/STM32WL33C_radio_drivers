@@ -1,10 +1,3 @@
-/*
- * my_mrsubg.h
- *
- *  Created on: Jun 10, 2025
- *      Author: sdagn
- */
-
 #ifndef APPLICATION_USER_CORE_INC_MY_MRSUBG_H_
 #define APPLICATION_USER_CORE_INC_MY_MRSUBG_H_
 
